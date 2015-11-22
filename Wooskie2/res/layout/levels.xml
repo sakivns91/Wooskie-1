@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/pure_ice"
+    tools:context="com.vikasyadav.wooskie.MainActivity" 
+    android:keepScreenOn="true">
+
+    <Button
+        android:id="@+id/easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/medium"
+        android:background="@drawable/buttons2"
+        android:text="Easy"
+        android:textColor="#ffffff"
+          android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/launcherImage"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/easy"
+        android:src="@drawable/skierclipart" 
+        />
+
+    <Button
+        android:id="@+id/medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/easy"
+        android:layout_alignRight="@+id/easy"
+        android:layout_above="@+id/hard"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttons2"
+        android:text="Medium"
+        android:textColor="#ffffff" 
+          android:textStyle="bold|italic"
+        android:typeface="serif"/>
+
+    <Button
+        android:id="@+id/hard"
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/easy"
+        android:layout_alignRight="@id/easy"
+        android:layout_above="@+id/back"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttons2"
+        android:text="Hard"
+        android:textColor="#ffffff"
+          android:textStyle="bold|italic"
+        android:typeface="serif" />
+    
+    
+       <Button
+        android:id="@+id/back"
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/easy"
+        android:layout_alignRight="@+id/easy"
+      
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttons2"
+        android:text="Back"
+        android:textColor="#ffffff" 
+          android:textStyle="bold|italic"
+        android:typeface="serif"/>
+
+</RelativeLayout>

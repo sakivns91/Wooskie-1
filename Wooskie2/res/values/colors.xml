@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="background">#020202</color>
+     <color name="colo">#990033</color>
+     <color name="btnbck">#808080</color>
+     <color name="white">#ffffff</color>
+      <color name="lightyellow">#fdf384</color>
+      <color name="Maroon">#981b1e</color>
+      <color name="grey">#454242</color>
+      <color name="black">#000</color>
+      <color name="deepskyblue">#00BFFF</color>
+      <color name="gel">#0B615E</color>
+     <color name="icecolor">#006064</color>
+     
+      
+      
+     
+</resources>

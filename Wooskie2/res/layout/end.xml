@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/pure_ice"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.vikasyadav.wooskie.MainActivity"
+    android:keepScreenOn="true" >
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttons2"
+        android:padding="10dp"
+       
+        android:paddingTop="20dp"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"  />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="@color/gel"
+        android:shadowDx=".5"
+        android:shadowDy=".5"
+        android:text="GAME OVER"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exit"
+        android:layout_alignLeft="@+id/score"
+        android:layout_marginBottom="46dp"
+        android:text="High Score"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textStyle="bold|italic"
+        android:typeface="serif"  />
+
+    <TextView
+        android:id="@+id/Penalty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/highscore"
+        android:layout_alignLeft="@+id/highscore"
+        android:layout_marginBottom="26dp"
+        android:text="Penalty"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textStyle="bold|italic"
+        android:typeface="serif"  />
+
+    <TextView
+        android:id="@+id/Bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Penalty"
+        android:layout_alignLeft="@+id/Penalty"
+        android:layout_marginBottom="33dp"
+        android:gravity="center_horizontal"
+        android:text="Bonus"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
+         android:textStyle="bold|italic"
+        android:typeface="serif"  />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Bonus"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="23dp"
+        android:text="Score"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/scorevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/score"
+        android:layout_alignBottom="@+id/score"
+        android:layout_alignRight="@+id/textView4"
+        android:text="Score Value"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textStyle="bold|italic"
+        android:typeface="serif"  />
+
+    <TextView
+        android:id="@+id/bonusvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Bonus"
+         android:layout_alignBottom="@+id/Bonus"
+        android:layout_alignRight="@+id/scorevalue"
+        android:text="Bonus Value"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textStyle="bold|italic"
+        android:typeface="serif"  />
+    
+    
+    <TextView
+        android:id="@+id/penaltyvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Penalty"
+         android:layout_alignBottom="@+id/Penalty"
+        android:layout_alignRight="@+id/bonusvalue"
+        android:text="Penalty Value"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+         android:textStyle="bold|italic"
+        android:typeface="serif" />
+    
+    
+    <TextView
+        android:id="@+id/highscorevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/highscore"
+         android:layout_alignBottom="@+id/highscore"
+        android:layout_alignRight="@+id/penaltyvalue"
+        android:text="HighScore Value"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textStyle="bold|italic"
+        android:typeface="serif"  />
+
+    <TextView
+        android:id="@+id/highscorelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Maroon"
+        android:textSize="30sp"
+         android:textStyle="bold|italic"
+        android:typeface="serif"  />
+
+</RelativeLayout>
